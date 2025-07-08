@@ -1,0 +1,213 @@
+.items-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .search-container {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .search-input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .search-input:focus {
+    outline: none;
+    border-color: #4a90e2;
+    box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+  }
+  
+  .search-input:disabled {
+    background-color: #f5f5f5;
+    cursor: not-allowed;
+  }
+  
+  .items-list {
+    width: 100%;
+    margin: 20px 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .item-card {
+    padding: 16px;
+    border-bottom: 1px solid #eee;
+    transition: all 0.2s ease;
+    background: white;
+    box-sizing: border-box;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+  }
+  
+  .item-card:hover {
+    background-color: #f8f9fa;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    position: relative;
+  }
+  
+  .item-card h3 {
+    color: #1a73e8;
+    margin-top: 0;
+    margin-bottom: 8px;
+    transition: color 0.2s;
+  }
+  
+  .item-card:hover h3 {
+    color: #0d47a1;
+    text-decoration: underline;
+  }
+  
+  .item-description {
+    color: #5f6368;
+    margin: 8px 0;
+    line-height: 1.5;
+  }
+  
+  .item-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+    font-size: 0.9em;
+  }
+  
+  .price {
+    font-weight: 600;
+    color: #1a73e8;
+  }
+  
+  .category {
+    background-color: #e8f0fe;
+    color: #1a73e8;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.8em;
+  }
+  
+  .item-card:last-child {
+    border-bottom: none;
+  }
+  
+  .item-card:hover {
+    background-color: #f8f9fa;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    position: relative;
+  }
+  
+  .item-card h3 {
+    margin: 0 0 8px 0;
+    color: #1a73e8;
+    font-size: 1.1em;
+  }
+  
+  .item-card p {
+    margin: 0 0 12px 0;
+    color: #5f6368;
+    font-size: 0.95em;
+    line-height: 1.5;
+  }
+  
+  .item-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85em;
+    color: #5f6368;
+  }
+  
+  .item-meta span {
+    background: #f1f3f4;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.8em;
+  }
+  
+  .item-link {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    transition: color 0.2s;
+  }
+  
+  .item-link:hover {
+    color: #1a73e8;
+    text-decoration: none;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+  }
+  
+  .pagination-button {
+    padding: 8px 16px;
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    color: #3c4043;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s, border-color 0.2s;
+  }
+  
+  .pagination-button:hover:not(:disabled) {
+    background-color: #f1f3f4;
+    border-color: #d2e3fc;
+  }
+  
+  .pagination-button:disabled {
+    color: #9aa0a6;
+    cursor: not-allowed;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+  }
+  
+  .pagination-info {
+    margin: 0 15px;
+    font-size: 14px;
+    color: #5f6368;
+  }
+  
+  .loading {
+    text-align: center;
+    padding: 40px;
+    color: #5f6368;
+    font-size: 16px;
+  }
+  
+  .error {
+    text-align: center;
+    padding: 20px;
+    color: #d93025;
+    background-color: #fce8e6;
+    border-radius: 4px;
+    margin: 20px 0;
+  }
+  
+  .no-results {
+    text-align: center;
+    padding: 30px;
+    color: #5f6368;
+    font-style: italic;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    margin: 20px 0;
+  }
